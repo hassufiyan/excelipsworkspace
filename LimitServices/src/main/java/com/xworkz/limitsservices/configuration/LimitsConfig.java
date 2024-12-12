@@ -2,9 +2,11 @@ package com.xworkz.limitsservices.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 @Component
 @ConfigurationProperties("limits-services")
+@Service
 public class LimitsConfig {
 	
 	private int minimum;
